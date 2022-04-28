@@ -35,15 +35,25 @@ $InformedConsent-theme: mat.define-light-theme((
 
 /* You can add global styles to this file, and also import other style files */
 :root {
-  --dark-jungle-green: #0d1f22ff;
-  --phthalo-green: #264027ff;
-  --forest-green-crayola: #6baa75ff;
-  --cambridge-blue: #9cc4b2ff;
-  --radical-red: #ff3366ff;
-  --light-radical-red: #ffb3cb;
-  --cambridge-grey: #e6e6ff;
-  --white: #fff;
-  --black: #000;
+  // As hex codes */
+
+  --teal-0: #23525B;	// Main Primary color */
+  --teal-1: #BCCFD2;
+  --teal-2: #5D848C;
+  --teal-3: #03262C;
+  --teal-4: #000A0C;
+
+  --blue-0: #2C3964;	// Main Secondary color (1) */
+  --blue-1: #C5C9D9;
+  --blue-2: #6B769A;
+  --blue-3: #081131;
+  --blue-4: #00030D;
+
+  --green-0: #296F39;	// Main Secondary color (2) */
+  --green-1: #CAE3D0;
+  --green-2: #71AB7E;
+  --green-3: #03360E;
+  --green-4: #000E03;
 }
 
 html, body { height: 100%; }

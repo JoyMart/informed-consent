@@ -1,0 +1,13 @@
+.site-header {
+  background-color: var(--teal-0);
+  color: var(--teal-2);
+  z-index: 0;
+}
+:host {
+  ::ng-deep {
+    mat-tab-group.mat-, .mat-tab-label {
+      color: var(--teal-1) !important;
+    }
+  }
+
+}

@@ -1,10 +1,27 @@
 .home-page {
   background-color: var(--blue-0);
-  //height: 100%;
-  //overflow-y: hidden;
+  height: 100%;
   //overflow-x: hidden;
+  overflow-y: auto;
   color: var(--blue-1);
   z-index: 1;
+}
+
+.home-page::-webkit-scrollbar {
+  background: var(--blue-0);
+}
+
+.home-page::-webkit-scrollbar-thumb {
+  background-color: var(--teal-2);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+
+.home-page-title {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Calibri, serif;
+  margin: 20px;
+  color: var(--teal-1);
 }
 
 .home-page-cards {
@@ -16,6 +33,18 @@
 .sort-cards {
   margin: 45px;
   width: 48vw;
+}
+
+.photos {
+  height: 200px;
+  margin: 10px;
+}
+
+.photo-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 

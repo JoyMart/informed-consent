@@ -1,16 +1,38 @@
-<div class="site-header">
-  <mat-tab-group animationDuration="0ms">
-    <mat-tab label="Home Page" class="home-page-nav">
-      <app-home></app-home>
-    </mat-tab>
-    <mat-tab label="History Timeline">
-      <app-history></app-history>
-    </mat-tab>
-    <mat-tab label="Modern Racism"></mat-tab>
-    <mat-tab label="Climate Action"></mat-tab>
-    <mat-tab label="Our Book Club"> </mat-tab>
-    <mat-tab label="Current Protests"></mat-tab>
-    <mat-tab label="Political Terminology"></mat-tab>
-    <mat-tab label="External Links"></mat-tab>
-  </mat-tab-group>
+<div class="site-page">
+  <div class="site-header">
+    <p class="site-name">Informed Consent</p>
+    <mat-tab-group animationDuration="0ms">
+      <mat-tab label="Home Page" class="home-page-nav">
+        <app-home></app-home>
+      </mat-tab>
+      <mat-tab label="History Timeline">
+        <app-history></app-history>
+      </mat-tab>
+      <mat-tab label="Modern Racism"></mat-tab>
+      <mat-tab label="Climate Action"></mat-tab>
+      <mat-tab label="Our Book Club"></mat-tab>
+      <mat-tab label="Current Protests"></mat-tab>
+      <mat-tab label="Political Terminology"></mat-tab>
+      <mat-tab label="External Links"></mat-tab>
+    </mat-tab-group>
+  </div>
+  <div>
+    <mat-card-footer class="site-footer">
+      <button mat-icon-button>
+        <fa-icon [icon]="faDiscord" class="icon"></fa-icon>
+      </button>
+      <button mat-icon-button>
+      <fa-icon [icon]="faTiktok" class="icon"></fa-icon>
+      </button>
+      <button mat-icon-button>
+      <fa-icon [icon]="faInstagram" class="icon"></fa-icon>
+      </button>
+      <button mat-icon-button>
+      <fa-icon [icon]="faTwitter" class="icon"></fa-icon>
+      </button>
+      <button mat-icon-button>
+      <fa-icon [icon]="faFacebook" class="icon"></fa-icon>
+      </button>
+    </mat-card-footer>
+  </div>
 </div>

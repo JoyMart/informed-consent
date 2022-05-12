@@ -1,12 +1,68 @@
-.site-header {
+.site-page {
   background-color: var(--teal-0);
   color: var(--teal-2);
   z-index: 0;
+  height: 100%;
+  width: 100vw;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
+
+.site-name {
+  font-size: 110px;
+  font-weight: bold;
+  font-family: Calibri, serif;
+  margin: 40px;
+  color: var(--teal-1);
+}
+
+.site-header {
+  background-color: var(--teal-0);
+  color: var(--teal-2);
+  height: 100px;
+}
+
+.site-footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  justify-items: center;
+  padding: 50px;
+}
+
+.icon {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
 :host {
   ::ng-deep {
     mat-tab-group.mat-, .mat-tab-label {
       color: var(--teal-1) !important;
+    }
+    .mat-tab-body-content {
+      background-color: var(--blue-0);
+      height: calc(100vh - 200px);
+      z-index: 1;
+    }
+    .mat-tab-body {
+      overflow: hidden !important;
+    }
+    .mat-tab-group {
+      position: relative;
+      height: calc(100vh - 250px);
+    }
+    .mat-tab-body-wrapper {
+      height: 100%;
+      width: 100%;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
   }
 

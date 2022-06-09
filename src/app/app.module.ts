@@ -14,6 +14,7 @@ import { far } from '@fortawesome/free-regular-svg-icons';
 import {MatButtonModule} from "@angular/material/button";
 import { CspanComponent } from './cspan/cspan.component';
 import { ClimateActionComponent } from './climate-action/climate-action.component';
+import {HttpClientModule} from "@angular/common/http";
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { ClimateActionComponent } from './climate-action/climate-action.componen
     MatTabsModule,
     MatCardModule,
     FontAwesomeModule,
-    MatButtonModule
+    MatButtonModule,
+     HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

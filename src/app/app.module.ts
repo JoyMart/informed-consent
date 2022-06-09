@@ -12,12 +12,16 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { far } from '@fortawesome/free-regular-svg-icons';
 import {MatButtonModule} from "@angular/material/button";
+import { CspanComponent } from './cspan/cspan.component';
+import { ClimateActionComponent } from './climate-action/climate-action.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    HistoryComponent
+    HistoryComponent,
+    CspanComponent,
+    ClimateActionComponent
   ],
   imports: [
     BrowserModule,

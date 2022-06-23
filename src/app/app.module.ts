@@ -15,6 +15,7 @@ import {MatButtonModule} from "@angular/material/button";
 import { CspanComponent } from './cspan/cspan.component';
 import { ClimateActionComponent } from './climate-action/climate-action.component';
 import {HttpClientModule} from "@angular/common/http";
+import { HighchartsChartModule } from 'highcharts-angular';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import {HttpClientModule} from "@angular/common/http";
     MatCardModule,
     FontAwesomeModule,
     MatButtonModule,
-     HttpClientModule
+    HttpClientModule,
+    HighchartsChartModule
   ],
   providers: [],
   bootstrap: [AppComponent]

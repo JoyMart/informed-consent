@@ -1,0 +1,15 @@
+<div class="modern-racism__page">
+  <div class="modern-racism__title-wrapper">
+    <a routerLink="terminology" class="modern-racism__title">What Is Modern Day Racism?</a>
+  </div>
+  <div class="modern-racism__cards">
+  <mat-card *ngFor="let fact of racismCards" class="sort-cards">
+    <mat-card-title>
+      {{fact.title}}
+    </mat-card-title>
+    <mat-card-content *ngFor="let paragraph of fact.content">
+      {{paragraph.paragraph}}
+    </mat-card-content>
+  </mat-card>
+  </div>
+</div>

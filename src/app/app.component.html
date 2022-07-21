@@ -1,25 +1,16 @@
 <div class="site-page">
   <div class="site-header">
     <p class="site-name">Informed Consent</p>
-    <mat-tab-group animationDuration="0ms">
-      <mat-tab label="Home Page" class="home-page-nav">
-        <app-home></app-home>
-      </mat-tab>
-      <mat-tab label="History Timeline">
-        <app-history></app-history>
-      </mat-tab>
-      <mat-tab label="Modern Racism"></mat-tab>
-      <mat-tab label="Climate Action">
-        <app-climate-action></app-climate-action>
-      </mat-tab>
-      <mat-tab label="Our Book Club"></mat-tab>
-      <mat-tab label="Current Protests"></mat-tab>
-      <mat-tab label="Political Terminology"></mat-tab>
-      <mat-tab label="External Links"></mat-tab>
-      <mat-tab label="C-Span">
-        <app-cspan></app-cspan>
-      </mat-tab>
-    </mat-tab-group>
+    <nav mat-tab-nav-bar animationDuration="0ms">
+      <a mat-tab-link
+        *ngFor="let link of navLinks"
+        [routerLink]="link.link"
+        routerLinkActive #rla="routerLinkActive"
+        [active]="rla.isActive">
+        {{link.label}}
+      </a>
+    </nav>
+    <router-outlet></router-outlet>
   </div>
   <div>
     <mat-card-footer class="site-footer">

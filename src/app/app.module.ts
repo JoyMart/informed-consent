@@ -16,6 +16,9 @@ import { CspanComponent } from './cspan/cspan.component';
 import { ClimateActionComponent } from './climate-action/climate-action.component';
 import {HttpClientModule} from "@angular/common/http";
 import { HighchartsChartModule } from 'highcharts-angular';
+import { ModernRacismComponent } from './modern-racism/modern-racism.component';
+import { TerminologyComponent } from './terminology/terminology.component';
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -23,7 +26,9 @@ import { HighchartsChartModule } from 'highcharts-angular';
     HomeComponent,
     HistoryComponent,
     CspanComponent,
-    ClimateActionComponent
+    ClimateActionComponent,
+    ModernRacismComponent,
+    TerminologyComponent
   ],
   imports: [
     BrowserModule,
@@ -33,7 +38,15 @@ import { HighchartsChartModule } from 'highcharts-angular';
     FontAwesomeModule,
     MatButtonModule,
     HttpClientModule,
-    HighchartsChartModule
+    HighchartsChartModule,
+    RouterModule.forRoot([
+      {path: 'home', component: HomeComponent},
+      {path: 'climate-change', component: ClimateActionComponent},
+      {path: 'cspan', component: CspanComponent},
+      {path: 'history', component: HistoryComponent},
+      {path: 'racism', component: ModernRacismComponent},
+      {path: 'terminology', component: TerminologyComponent}
+    ])
   ],
   providers: [],
   bootstrap: [AppComponent]

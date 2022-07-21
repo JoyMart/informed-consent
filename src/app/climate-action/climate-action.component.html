@@ -1,7 +1,10 @@
 <div>
   <mat-card *ngFor="let data of climateData">
+    <mat-card-header>
+      {{data.title}}
+    </mat-card-header>
     <mat-card-content>
-      {{data}}
+      {{data.description}}
     </mat-card-content>
   </mat-card>
 </div>

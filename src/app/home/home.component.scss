@@ -1,6 +1,6 @@
 .home-page {
   background-color: var(--blue-0);
-  height: 100%;
+  height: calc(100vh - 250px);
   //overflow-x: hidden;
   overflow-y: auto;
   color: var(--blue-1);
@@ -20,7 +20,7 @@
   font-size: 30px;
   font-weight: bold;
   font-family: Calibri, serif;
-  margin: 20px;
+  margin: 20px 10px 0;
   color: var(--teal-1);
 }
 
@@ -53,7 +53,7 @@
     mat-card {
       color: var(--blue-1) !important;
       background-color: var(--blue-2) !important;
-      margin: 20px 20px 20px 20px;
+      margin: 20px;
     }
   }
 

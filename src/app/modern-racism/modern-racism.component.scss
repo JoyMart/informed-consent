@@ -1,0 +1,61 @@
+// page style
+.modern-racism__page{
+  background-color: var(--green-0);
+  height: calc(100vh - 250px);
+  overflow-y: auto;
+  color: var(--teal-1);
+  z-index: 1;
+}
+
+.modern-racism__page::-webkit-scrollbar {
+  background: var(--green-0);
+}
+
+.modern-racism__page::-webkit-scrollbar-thumb {
+  background-color: var(--teal-2);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+}
+// title style
+.modern-racism__title-wrapper{
+padding: 20px 10px 0;
+}
+.modern-racism__title{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Calibri, serif;
+  margin: 20px;
+  color: var(--green-1);
+  text-decoration: none;
+}
+
+// card styles
+.modern-racism__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.mat-card {
+  background-color: var(--green-2);
+  color: var(--green-1);
+  padding: 20px;
+  margin: 20px;
+}
+
+.sort-cards {
+  margin: 45px;
+  width: 48vw;
+}
+
+:host {
+  ::ng-deep {
+    mat-card {
+      background-color: var(--green-2);
+      color: var(--green-1);
+      padding: 20px;
+      margin: 20px;
+    }
+  }
+
+}
